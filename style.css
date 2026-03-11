@@ -1,0 +1,211 @@
+/* Base */
+body{
+  font-family:Arial, sans-serif;
+  margin:0;
+  background:#f5f5f5;
+  color:#333;
+  overflow-x:hidden;
+}
+
+/* Particles */
+#particles-js{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+/* Header */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 50px;
+  background:rgba(255,255,255,0.9);
+  backdrop-filter:blur(10px);
+  box-shadow:0 3px 10px rgba(0,0,0,0.05);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+header h1{
+  font-size:2em;
+  color:#805c7e;
+  margin:0;
+}
+header input{
+  padding:10px;
+  border-radius:6px;
+  border:1px solid #ddd;
+}
+
+/* Categories */
+.categories{
+  text-align:center;
+  padding:20px;
+  background:#fff;
+  box-shadow:0 3px 10px rgba(0,0,0,0.05);
+  position:sticky;
+  top:70px;
+  z-index:9;
+}
+.categories button{
+  margin:5px;
+  padding:10px 20px;
+  border:none;
+  border-radius:20px;
+  cursor:pointer;
+  background: linear-gradient(45deg,#805c7e,#cfccc0);
+  color:white;
+  transition:0.3s;
+}
+.categories button:hover{
+  background:#805c7e;
+}
+
+/* Hero */
+.hero{
+  position:relative;
+  height:450px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:30px;
+  border-radius:15px;
+  overflow:hidden;
+  background-image:url('images/hero.jpg');
+  background-attachment:fixed;
+  background-size:cover;
+  background-position:center;
+}
+.hero-overlay{
+  background:rgba(0,0,0,0.35);
+  color:white;
+  text-align:center;
+  padding:50px;
+  border-radius:15px;
+}
+.hero-overlay h2{
+  font-size:2.5em;
+  margin-bottom:10px;
+}
+.hero-overlay p{
+  font-size:1.2em;
+  margin-bottom:20px;
+}
+.hero-overlay button{
+  padding:15px 30px;
+  border:none;
+  border-radius:25px;
+  background:#805c7e;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+.hero-overlay button:hover{
+  background:#805c7e;
+}
+
+/* Slider */
+.slider{
+  padding:40px;
+}
+#slider-container{
+  display:flex;
+  gap:20px;
+  overflow-x:auto;
+  scroll-behavior:smooth;
+}
+
+/* Products */
+#product-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  padding:20px 40px;
+}
+.product{
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+  text-align:center;
+  transition:0.4s;
+}
+.product:hover{
+  transform:scale(1.05);
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+.product img{
+  width:100%;
+  border-radius:8px;
+}
+.price{
+  color:#805c7e;
+  font-weight:bold;
+  margin:5px 0;
+}
+.buttons{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  margin-top:10px;
+}
+/* Buttons زاهية */
+.buttons button, .buttons .buy{
+  padding:10px 20px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+/* Add to Cart */
+.buttons button:nth-child(2){ /* 🛒 */
+  background:#ffeb3b; /* أصفر زاهي */
+
+  color:white;
+}
+.buttons button:nth-child(2):hover{
+  background:#ffeb3b;
+}
+
+/* Wishlist ❤️ */
+.buttons button:nth-child(1){
+  background:linear-gradient(45deg, #ffeb3b, #977ab5); /* أصفر زاهي */
+  color:#333;
+}
+.buttons button:nth-child(1):hover{
+  background:linear-gradient(45deg, #ffeb3b, #977ab5);
+}
+
+/* Buy Now */
+.buy{
+  background:#00ccff; /* أزرق زاهي */
+  color:white;
+}
+.buy:hover{
+  background:#0099cc;
+}
+
+/* Dark mode */
+.dark{
+  background:#f5f5f5;
+  color:#333;
+}
+.dark header{
+  background:rgba(255,255,255,0.9);
+}
+.dark .product{
+  background:white;
+  color:#333;
+}
+
+/* Animations */
+@keyframes fadeUp{
+0%{opacity:0;transform:translateY(20px);}
+100%{opacity:1;transform:translateY(0);}
+}

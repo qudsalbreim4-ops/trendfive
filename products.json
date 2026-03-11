@@ -1,0 +1,38 @@
+{
+  "products":[
+    {
+      "id":"p1",
+      "name":"JBL Tune 230NC TWS - True Wireless In-Ear Headphones",
+      "category":"Electronics",
+      "price":"$99.95",
+      "image":"https://m.media-amazon.com/images/I/51KEIAsdyfL._AC_SL1500_.jpg",
+      "link":"https://amzn.to/3PmZQF8"
+    },
+    {
+      "id":"p2",
+      "name":"TILUCK Stainless Steel Measuring Cups & Spoons Set, Cups and Spoons",
+      "category":"Home&Kitchen",
+      "price":"$15.99",
+      "image":"images/cup.jpg",
+      "link":"https://amzn.to/4sEEKkc"
+    },
+    {
+      "id":"p3",
+      "name":"Shark Rocket Ultra-Light Corded Bagless Vacuum for Carpet and Hard Floor Cleanings",
+      "category":"Electronics",
+      "price":"$99.00",
+      "image":"images/vacum.png",
+      "link":"https://amzn.to/3NtwV1F"
+    },{"id":"p4",
+      "name":"BS-MALL Professional Makeup Brush Set 18 Pcs Premium Synthetic Foundation Powder Concealers Eye Shadows",
+      "category":"makeup",
+      "price":"$19.99",
+      "image":"images/prushes.jpg",
+      "link":"https://amzn.to/4b7o6ni"},
+  {"id":"p5",
+      "name":"Real Techniques Miracle Complexion Beauty Sponge Makeup Blender, Set of 4",
+      "category":"makeup",
+      "price":"$13.79",
+      "image":"images/beauty.jpeg",
+      "link":"https://amzn.to/4s65VEr"}]
+}
